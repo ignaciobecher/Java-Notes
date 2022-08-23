@@ -6,7 +6,8 @@ class cursoJava {
     }
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?TIPOS DE DATOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?TIPOS DE
+// DATOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 
 // ----------------DECLARACION DE VARIABLES---------------------//
 // Int
@@ -150,19 +151,112 @@ System.out.println("Hola mundo");System.out.println("Me llamo ignacio");
 // ----------------DECLARACION DE MULTIPLES VARIABLES---------------------//
 
 int var1 = 1, var2 = 2, var3 = 3;// se puede siempre y cuando sean todas del mismo tipo
-float pi=3.14f,e=0.1010f;
+float pi = 3.14f, e = 0.1010f;
 
 // ----------------CONSTANTES---------------------//
-//Usamos la palabra reservada final para reservar y nombrar una constante
-final float gravity;
-gravity=9.58f;
-
+// Usamos la palabra reservada final para reservar y nombrar una constante
+final float gravity;gravity=9.58f;
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?OPERADORES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 
-
 // ----------------OPERADORES ARITMETICOS---------------------//
 
-//Suma,resta,multiplicacion y division
+// Suma,resta,multiplicacion y division
 
-//hacer push
+// ----------------OPERADORES RELACIONALES---------------------//
+
+// >
+// <
+// >=
+// <=
+// ==
+// . !=
+
+// ----------------OPERADORES LOGICOS---------------------//
+// and, or y not
+// And
+boolean result = 5 >= 5 && true && 10 > 9;
+
+// Or
+
+result=false||false||false||true;
+
+// Not
+
+System.out.println(!false);
+
+// ----------------OPERADOR TERNARIO---------------------//
+// IFTTT: if this, then this
+
+String mensaje = 10 > 9 ? "Es mayor" : "Es menor"; // ---> si la expresion da true me devuelve el primer mensaje, sino
+                                                   // el 2do
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?STRINGS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+
+// ----------------CADENAS EN JAVA---------------------//
+// String es una clase
+
+// Formas para declarar
+String mensaje1 = "Hola soy un string";
+
+String mensaje2=new String("hola soy string")
+
+// ----------------METODOS PARA STRINGS---------------------//
+
+// Length
+int cantidad = mensaje1.length();
+
+// Contains
+boolean contiene = mensaje.contains("hola");// veo si mensaje contiene un "hola"
+
+// StartsWith
+boolean empiezaCon = mensaje.startsWith("Hola");
+
+// EndsWith
+boolean terminaCon = mensaje.endsWith("mundo");
+
+// Concat
+String nuevoString1 = mensaje.concat("estamos en curso de java");
+
+// ----------------METODOS DE FORMATO---------------------//
+
+// toUpperCase()-->pasar a mayusucla
+// toLowerCase()-->pasar a minuscula
+// trim()-->remueve los espacios
+
+// Format
+String=mensaje;
+float valor = 10.87213f;
+
+mensaje=String.format("El total de %d articulos es %.2f %s",3,valor,"Ars");// primero pasamos el formato y luego los
+                                                                           // parametros
+
+System.out.printf(formato,valores);
+
+// %d--->enteros
+// %f--->decimales.Con un punto y numero indico decimales que quiero
+// &s-->strings
+
+// ----------------COMPARAR CADENAS---------------------//
+// Equals
+String cadena1 = "Hola";
+String cadena2 = "hola";
+
+boolean resultado6 = cadena1.toLowerCase().equals(cadena2.toLowerCase());// aca las paso a minuscula para ver si son
+                                                                         // iguales
+
+// EqualsIgnoreCase
+
+resultado6=cadena1.equalsIgnoreCase(cadeena2);
+// ignora si esta en mayuscula o minuscula
+
+// ----------------CONCATENAR CADENAS---------------------//
+String curso = "java";
+String nombre = "ignacio";
+
+String mensaje89="Bienvenido" + nombre + "al curso de" + curso;
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?CICLOS Y
+// CONDICIONALES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+
+// !!!!!!!!!!hacer push!!!!!!!!!!!!!!!!!!!
