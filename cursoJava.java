@@ -1,3 +1,5 @@
+import java.text.BreakIterator;
+
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?INTRODUCCION?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 //Hello world
 class cursoJava {
@@ -285,15 +287,38 @@ String mensaje2=new String("hola soy string")
         } else {
             System.out.println("Muy bien");
         }
-    }else{
-    System.out.println("Desaprobado");
+    }else
+    {
+        System.out.println("Desaprobado");
 
+    }
+
+    // ----------------SCOPE---------------------//
+    // El scope es el alcance que tiene un elemento dentro de un programa, cade vez
+    // que creamos un nuevo bloque {} estamos creando un nuevo scope
+
+    // ----------------SWITCH---------------------//
+
+String colorDeLuz="Rosa"
+
+    switch(colorDeLuz)
+    {
+    case "Verde":
+        System.out.println("Siga");
+        break;
+
+    case "Amarillo":
+        System.out.println("Circule con cuidado");
+        break;
+
+    case "Rojo":
+        System.out.println("Alto");
+        break;
+
+    default:
+        System.out.println("Ese color no es valido");
 }
 
-// ----------------SCOPE---------------------//
-// El scope es el alcance que tiene un elemento dentro de un programa, cade vez
-// que creamos un nuevo bloque {} estamos creando un nuevo scope
-
-// ----------------SWITCH---------------------//
+// ----------------CICLO WHILE---------------------//
 
 // !!!!!!!!!!hacer push!!!!!!!!!!!!!!!!!!!
