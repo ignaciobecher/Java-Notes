@@ -319,6 +319,27 @@ String colorDeLuz="Rosa"
         System.out.println("Ese color no es valido");
 }
 
-// ----------------CICLO WHILE---------------------//
+    // ----------------CICLO WHILE---------------------//
+    // Con while ->1. Se evalua 2.Se ejecuta el bloque
+    int contador = 1;
+
+    while(contador<11)
+    {
+        system.ou.println("hola mundo");
+        contador++;
+    }
+
+    // ----------------DO WHILE---------------------//
+    // Ejecuta hasta que una condicion deje de cumplirse
+
+    // Do while ->1.Se ejecuta el bloque 2.Se evalua
+
+    do
+    {
+        System.out.println(contador);
+        contador++;
+}while(contador<10);
+
+// ----------------CICLO FOR---------------------//
 
 // !!!!!!!!!!hacer push!!!!!!!!!!!!!!!!!!!
