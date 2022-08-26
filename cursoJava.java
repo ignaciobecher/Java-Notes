@@ -1,5 +1,7 @@
 import java.text.BreakIterator;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?INTRODUCCION?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 //Hello world
 class cursoJava {
@@ -341,5 +343,9 @@ String colorDeLuz="Rosa"
 }while(contador<10);
 
 // ----------------CICLO FOR---------------------//
+
+// for (inicializacion; condicion; Iteracion){}
+
+for(int numero=9,)
 
 // !!!!!!!!!!hacer push!!!!!!!!!!!!!!!!!!!
