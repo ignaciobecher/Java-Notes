@@ -340,12 +340,34 @@ String colorDeLuz="Rosa"
     {
         System.out.println(contador);
         contador++;
-}while(contador<10);
+    }while(contador<10);
 
-// ----------------CICLO FOR---------------------//
+    // ----------------CICLO FOR---------------------//
 
-// for (inicializacion; condicion; Iteracion){}
+    // for (inicializacion; condicion; Iteracion){}
 
-for(int numero=9,)
+    for(
+    int numero = 9, x = 1;x<11;system.out.println(numero*x),x++)
+    {
+
+    }
+
+    // Mejorar legibilidad
+    for(
+    int numero = 9, x = 1;x<11;){
+    int resultado=numero*x
+    String mensaje=numero + "*" + x + "=" +resultado; 
+    system.out.println(mensaje);
+    x++;
+}
+
+    // For con un if
+
+    for(
+    int numero = 1;numero<101;numero++){
+    if(numero % 2 == 0){
+        System.out.println(numero)
+    }
+}
 
 // !!!!!!!!!!hacer push!!!!!!!!!!!!!!!!!!!
