@@ -370,4 +370,23 @@ String colorDeLuz="Rosa"
     }
 }
 
-// !!!!!!!!!!hacer push!!!!!!!!!!!!!!!!!!!
+// ----------------BREAK Y CONTINUE---------------------//
+
+// Break en un ciclo for corta el ciclo que lo contiene, no todo
+// Continue nos permite que el ciclo salte a la siguiente iteracion
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?CICLOS Y
+// CONDICIONALES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+
+// ----------------ARRAYS---------------------//
+
+// Como declarar
+String nombres[]; // primero inicializo
+nombres=new String[3]; // despues hago un new y el tipo de dato junto con la cantidad de elementos del
+                       // array
+
+nombres[0]="Elemento 1" // los declaro en cada indice
+nombres[1]="Elemento 2"nombres[2]="Elemento 3"
+
+// ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
+// GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
