@@ -480,5 +480,56 @@ String colorDeLuz="Rosa"
     }
 }
 
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?CLASES Y
+    // OBJETOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+
+    // ----------------PROGRAMACION ORIENTADA A OBJETOS---------------------//
+
+    // Primero para crear una clase, creo un archivo nuevo class
+    Package main;
+
+    public class Perro {
+        String nombre;
+        String raza;
+        int edad;
+    }
+
+    // Nueva instancia del objeto perro
+
+    Perro lassie = new Perro();
+
+    lassie.nombre="lassie";lassie.raza="collie";lassie.edad=4;
+
+    system.out.println(lassie.nombre);system.out.println(lassie.raza);system.out.println(lassie.edad);
+
+    // ----------------METODOS---------------------//
+
+    Package main;
+
+    public class Perro {
+        String nombre;
+        String raza;
+        int edad;
+
+        // Metodos
+        void comer() { // void hace referencia a que el metodo no retorna ningun valor
+            system.out.println("El perro esta comiendo");
+        }
+
+        void dormir() { // void hace referencia a que el metodo no retorna ningun valor
+            system.out.println("El perro esta durmiendo");
+        }
+
+        void ladrar() { // void hace referencia a que el metodo no retorna ningun valor
+            system.out.println("El perro esta ladrando");
+        }
+}
+
+// Para llamarlos en la funcion solo debemos hacer
+
+lassie.comer();lassie.dormir();lassie.ladrar();
+
+// ----------------PARAMETROS---------------------//
+
 // ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
 // GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
