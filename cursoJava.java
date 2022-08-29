@@ -389,9 +389,96 @@ String colorDeLuz="Rosa"
 
     // DEFINIR ARRAY
 
-String nombres[]={"Elemento 1","Elemento 2","Elemento 3"};
+    String nombres[] = { "Elemento 1", "Elemento 2", "Elemento 3" };
 
-// ----------------RECORRER ARRAYS---------------------//
+    // ----------------RECORRER ARRAYS---------------------//
+
+    int calificaciones[] = { 10, 9, 8, 7, 5, 6, 6, 6, 8, 10, 9 };
+    int suma = 0;
+
+    for(
+    int i = 0;i<calificaciones.length;i++)
+    {
+        suma += calificaciones[i];
+    }
+
+    float promedio = suma / califiaciones.length;
+
+    // ----------------FOR EACH---------------------//
+
+    for(
+    int valorPorIndice:calificaciones)
+    { // declaro una variable del mismo tipo que el array y sigue el elemento a iterar
+        suma += valorPorIndice;
+    }
+
+    // ----------------INSERTAR REGISTROS---------------------//
+    int valores[] = new int[10];for(
+    int i = 0;i<valores.length;i++)
+    {
+        valores[i] = i;
+    }
+
+    // ----------------ARREGLOS BIDIMENSIONALES---------------------//
+
+    int matriz[][] = new int[4][3]; // declaro la matriz y defino de cuantas filas y columnas la quiero
+
+    matriz[0][0]=1;matriz[0][1]=2;matriz[0][2]=3;
+
+    matriz[1][0]=1;matriz[1][1]=2;matriz[1][2]=3;
+
+    matriz[2][0]=1;matriz[2][1]=2;matriz[2][2]=3;
+
+    matriz[3][0]=1;matriz[3][1]=2;matriz[3][2]=3;
+
+    // ----------------RECORRER MATRICES---------------------//
+
+    for(
+    int posX = 0;posX<matriz.length;posX++)
+    {
+
+        for (int poxY = 0; posY < matriz[posX].length; posY++) {
+            matriz[posX][posY] = posY + 1;
+        }
+    }
+
+    // Mismo resultado pero con FOREACH
+
+    for(
+    int[] fila:matriz)
+    {
+        for (int celda : fila) {
+            System.out.println(celda);
+        }
+    }
+
+    // ----------------ARRAYS MULTIDIMENSIONALES---------------------//
+    // Multiples arrays de multiples dimensiones en uno solo
+
+    int calificaciones[][] = new int[5][];// le asigno el numero de filas pero no el de columnas
+
+    calificaciones[0]=new int[1]; // 1
+    calificaciones[1]=new int[2]; // 2
+    calificaciones[2]=new int[2]; // 3
+    calificaciones[3]=new int[1]; // 4
+    calificaciones[4]=new int[3]; // 5
+
+    calificaciones[0][0]=8;
+
+    calificaciones[1][0]=5;calificaciones[1][1]=7;
+
+    calificaciones[2][0]=10;calificaciones[2][1]=9;
+
+    calificaciones[3][0]=3;
+
+    calificaciones[4][0]=8;calificaciones[4][1]=6;calificaciones[4][2]=1;
+
+    for(
+    int[] califiacionesPorALumno:calificaciones){
+    for(int calificacion : califiacionesPorALumno){
+        System.out.print(calificacion + "")
+    }
+}
 
 // ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
 // GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
