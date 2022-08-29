@@ -523,13 +523,105 @@ String colorDeLuz="Rosa"
         void ladrar() { // void hace referencia a que el metodo no retorna ningun valor
             system.out.println("El perro esta ladrando");
         }
+    }
+
+    // Para llamarlos en la funcion solo debemos hacer
+
+    lassie.comer();lassie.dormir();lassie.ladrar();
+
+    // ----------------PARAMETROS---------------------//
+    Package main;
+
+    public class Perro {
+        String nombre;
+        String raza;
+        int edad;
+
+        void establecerAtributos(String nombrePerro, String razaPerro, int edadPerro) {
+            nombre = nombrePerro;
+            raza = razaPerro;
+            edad = edadPerro;
+        }
+
+        void comer() { // void hace referencia a que el metodo no retorna ningun valor
+            system.out.println("El perro esta comiendo");
+        }
+
+        void dormir() { // void hace referencia a que el metodo no retorna ningun valor
+            system.out.println("El perro esta durmiendo");
+        }
+
+        void ladrar() { // void hace referencia a que el metodo no retorna ningun valor
+            system.out.println("El perro esta ladrando");
+        }
+    }
+
+    // Quedaria la funcion de la siguiente forma
+
+    Perro lassie = new Perro();
+
+    lassie.establecerAtributos("lassie","collie",4);
+
+    system.out.println(lassie.nombre);system.out.println(lassie.raza);system.out.println(lassie.edad);
+
+    lassie.comer();lassie.dormir();lassie.ladrar();
+
+    // ----------------THIS---------------------//
+
+    void establecerAtributos(String nombre, String raza, int edad) {
+        this.nombre = nombre; // accedo a los atributos del objeto con this
+        this.raza = raza;
+        this.edad = edad;
+    }
+
+    // ----------------RETORNAR VALORES---------------------//
+package main;
+
+    public class Triangulo {
+        float base;
+        float altura;
+
+    float area(){       //como me devuelve un dato dejo de usar void y uso el tipo de dato a declarar
+        float area=(this.base * this.altura)/2;
+        return area //uso return
+    }
+    }
+
+    // Nueva instancia de la clase triangulo
+
+    Triangulo triangulo = new Triangulo();Triangulo.base=10;Triangulo.altura=20;
+
+    float resultado = triangulo.area();
+
+    // ----------------MODIFICADORES DE ACCESO---------------------//
+    // Los modificadores de acceso restringen o hacen publico el uso de ciertos
+    // elementos entre clases y archivos de un mismo paquete
+
+    // Modificadores;
+    // 1.Default
+    // 2.Public
+    // 3.Private
+    // 4.Protected
+
+    public class Usuario {
+        public String userName; // al tener un public cualquier otra clase puede usarlo o importarlo
+        private String password; // al tener un private solo se puede usar en la clase usuario
+    }
+
+    // ----------------GETTERS Y SETTERS---------------------//
+    // Getters
+    public String getPassword() {
+        return this.password; // con el metodo getter podremos acceder a algo privado pero sin acceder
+                              // directamente
+    }
+
+    // Setter
+public void setPassWord(String password){
+    this.password=password;
 }
+// con este metodo podria usar el setPassword en otra clase aunque sea privado
 
-// Para llamarlos en la funcion solo debemos hacer
-
-lassie.comer();lassie.dormir();lassie.ladrar();
-
-// ----------------PARAMETROS---------------------//
+// ----------------CONSTRUCTOR---------------------//
 
 // ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
 // GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
