@@ -616,12 +616,70 @@ package main;
     }
 
     // Setter
-public void setPassWord(String password){
-    this.password=password;
-}
-// con este metodo podria usar el setPassword en otra clase aunque sea privado
+    public void setPassWord(String password) {
+        this.password = password;
+    }
+    // con este metodo podria usar el setPassword en otra clase aunque sea privado
 
-// ----------------CONSTRUCTOR---------------------//
+    // ----------------CONSTRUCTOR---------------------//
+
+    public class Main {
+        Usuario codi = new Usuario("codi", "pass");
+    }
+
+    // Constructor
+    public class Usuario {
+        public Usuario(String username, String password) {
+            this.username = username;
+            this.password = password;
+        }
+    }
+
+    // ----------------SOBRECARGA DE METODOS---------------------//
+    // Es la posibilidad que tiene un lenguaje de definir dos o mas metodos con el
+    // mismo nombre en la misma clase
+
+public class Calculadora{
+    //Enteros
+    public int suma(int valor1, int valor2){
+        return valor1+valor;
+    }
+    //Flotantes
+    public float suma(float valor1, float valor2){
+        return valor1+valor;
+    }
+    //Double
+    public int double(double valor1, double valor2){
+        return valor1+valor;
+    }
+}
+
+    // En java podemos tener metodos con el mismo nombre pero nunca con mismo nombre
+    // y mismo tipo de dato
+
+    // ----------------MULTIPLES PARAMETROS---------------------//
+    // Para no usar muchos metodos en una sola clase y dificultar el codigo podemos
+    // pasar multiples parametros a un solo metodo
+    // Clase calculadora
+    public class Calculadora {
+    public int suma(int...numeros){//al poner los tres puntos indico que va a tener n parametros
+        int suma = 0;
+        System.out.println(numeros.length);
+
+        for(int numero : numeros)
+        suma +=numero;
+        return suma
+    }
+    }
+
+    // Clase donde inicializo nueva instancia de la clase calculadora
+public class main{
+    Calculadora calculadora=new Calculadora();
+    float resultado=calculadora.suma(12,4,5,6,7);
+    System.out.println("el resultado de la suma es:" + resultado);
+}
+
+// ----------------STATIC---------------------//
 
 // ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
 // GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
