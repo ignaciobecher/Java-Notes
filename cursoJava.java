@@ -793,5 +793,83 @@ public void dormir(){
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?APIS DE
 // JAVA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 
+// Paquete: nos permitira agrupar clases
+
+// ----------------IMPORT---------------------//
+// Para importar desde otro paquete una clase
+
+// Al principio del documento
+import nombre.delpaquete.aimportar.nombreDeLaClaseImportada;
+// si quiero importar todo cambio el nombre de clase por un asterisco
+
+// ----------------JAVA LANG---------------------//
+// Los elementos del paquete java lang no hacen falta ser importados
+
+// ----------------PROTECTED---------------------//
+// El metodo protected hace que un metodo solo pueda ser usado en el mismo
+// paquete
+
+public class Java{
+    protected String getTitulo(){
+
+    }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?ENTRADA DE
+// DATOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+// ----------------CLASE SCANNER---------------------//
+
+import java.util.Scanner; // primero importo scanner
+
+public class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);    //inicializo nueva instancia de la clase scanner
+        System.out.println("Cual es tu nombre?");   
+
+        String nombre = sc.nextLine();      //uso next in line para preguntar al usuario por consola
+
+        System.out.println("hola" + nombre);    //imprimo el resultado en la variable nombre
+    }
+}
+
+
+// ----------------OBTENER TIPOS DE DATOS---------------------//
+//Como nextLine devuelve string hay formas de transformar los datos
+
+//Formas para obtener datos enteros
+int edad=Integer.parseInt(sc.nextLine());
+int edad=sc.nextInt();
+
+//Formas para obtener float
+float altura=sc.nextFloat();
+
+//Formas para obtener boolean
+boolean valor=sc.nextBoolean();
+
+// ----------------METODO NEXTLINE---------------------//
+//NextLine captura el salto de linea, es como hacer un salto de linea
+
+//CON EL METODO SC.CLOSE() DEJAMOS DE SCANNEAR EN CONSOLA EVITANDO ASI USO DE RECURSOS
+
+
+// ----------------CLASE JOPTIONPANE---------------------//
+
+import javax.swing.JOptionPane; // importo la clase
+
+public class main {
+    public static void main(String[] args) {
+        // Ingreso de datos
+        String nombre = JOptionPane.showInputDialog(null, "Cual es tu nombre?"); // utilizo la clase
+        int edad = integer.parseInt(JOptionPane.showInputDialog(null, "Cual es tu edad?"));
+
+        // Salida de datos
+
+        String mensaje = "hola" + nombre + "con una edad de" + edad;
+
+        JOptionPane.showMessageDialog(null, mensaje); // para sacar datos
+
+    }
+}
+
 // ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
 // GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
