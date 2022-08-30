@@ -1,6 +1,3 @@
-import java.text.BreakIterator;
-
-import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?INTRODUCCION?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 //Hello world
@@ -679,7 +676,122 @@ public class main{
     System.out.println("el resultado de la suma es:" + resultado);
 }
 
-// ----------------STATIC---------------------//
+    // ----------------STATIC---------------------//
+    // Static me permite que una variable que pertenece a un objeto pase a ser de
+    // nivel clase, pudiendo usarla en otra clase sin tener que instanciar un nuevo
+    // objeto, solo usandola como cualquier otra cosa
+
+    public class Circulo {
+        public static final float pi = 3.14f; // elemento que pasa a ser de clase
+        public float radio = 0f; // elemento de instancia
+    }
+
+    // al poner la palabra static se puede usar un metodo sin necesidad de nueva
+    // instancia.
+
+    // ----------------CLASES ANIDADAS---------------------//
+
+    public class Usuario { // clase principal
+        String usuario = "cody";
+
+        public void establecerRol() { // metodo que instancia nuevo Administrado y usa el metodo trabajar
+            Administrado admin = new Administrado();
+            admin.trabajar();
+        }
+
+        public class Administrado { // clase Administrado con metodo trabajar
+        public void trabajar(){
+            System.out.println("Administrador")
+        }
+        }
+    }
+
+    // ----------------HERENCIA---------------------//
+
+    public class Gato extends Mascota { // para poder usar los atributos de una clase padre debemos poner un extends en
+                                        // la clase hija
+
+    }
+
+    // ----------------SOBRE ESCRITURA DE METODOS---------------------//
+    // Es tomar un metodo de una clase padre y hacer que la clase hija lo implemente
+    // de otra forma
+
+    // ------------------SUPER-------------------//
+    // Super nos permite sobre escribir un metodo conservando las funcionalidades de
+    // la clase padre
+
+public void dormir(){
+    super.dormir();     //uso super y el metodo que quiero conservar de la clase padre
+    System.out.println("El perro duerme")
+}
+
+    // ----------------CLASES ABSTRACTAS---------------------//
+    // Una clase abstracta es una clase que define el cuerpo, o sea define que hacer
+    // pero no como
+
+    // Son clases que establecen ciertos metodos sin mucho detalle para que luego
+    // las clases hijas se encarguen de los detalles
+
+    // Forma para declarar clase abstracta
+    public abstract class figura(){
+        private int nuemroLados;
+
+        public figura() {
+            this.nuemroLados = 0;
+        }
+
+        public abstract floa area(); // metodo abstracto
+    }
+
+    // Para usar la clase abstracta usamos extends como en cualquier clase heredada
+
+    // Clase hija
+
+    public class Triangulo extends figura {
+        public float area() {
+
+        }
+    }
+
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?INTERFACES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
+
+    // Las interfaces son como clases, pero que nos permmiten que un mismo elemento
+    // herede de varias interfaces, cosa que no se puede realizar con clases
+
+    // primero creamos nueva interface como clase abstracta
+    public interface Canino {
+    public abstract void aullar()
+    }
+
+    public class PastorAleman implements Canino {
+    public void aullar(){
+        system.out.println("LAdrar")
+    }
+    }
+
+    // ----------------MULTIPLES INTERFACES---------------------//
+
+    public class PastorAleman implements Canino, Mascota { // usa las interfaces cnaino y mascota
+        public void Aullar() {
+        }
+    }
+
+    // ----------------HERENCIA DE INTERFACES---------------------//
+    public interface InterfaceA extends InterfaceB {
+    }
+
+    // ----------------METODO DEFAULT---------------------//
+    public interface InterfaceB {
+        public abstract void mostrarMensaje();
+
+        public default void saluda() {
+            system.out.println("Hola desde interface");
+        }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?APIS DE
+// JAVA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 
 // ????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HACER PUSH A
 // GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!???
